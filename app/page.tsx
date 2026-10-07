@@ -40,22 +40,34 @@ export default function HomePage() {
             <li>Smart-contract security across DeFi, cross-chain infrastructure, and token standards.</li>
             <li>Tracing state transitions, trust assumptions, and asset accounting.</li>
             <li>Public research records across {platforms.join(", ")}.</li>
+            <li>Clear impact analysis, reproducible PoCs, and practical remediation.</li>
           </ul>
           <div className="hero-actions">
             <Link className="button button-primary" href="#contact">request a review <span aria-hidden="true">→</span></Link>
             <Link className="button button-outline" href="#experience">view contest record <span aria-hidden="true">↗</span></Link>
           </div>
         </div>
-        <Image
-          className="hero-logo"
-          src="/icon.png"
-          alt="Jopantech circuit wordmark"
-          width={512}
-          height={512}
-          sizes="(max-width: 740px) 144px, (max-width: 1200px) 16vw, 208px"
-          unoptimized
-          preload
-        />
+        <div className="hero-art">
+          <figure className="hero-art-card">
+            <div className="hero-logo-stage">
+              <Image
+                className="hero-logo"
+                src="/icon.png"
+                alt="Jopantech circuit wordmark"
+                width={512}
+                height={512}
+                sizes="(max-width: 900px) 70vw, 30vw"
+                unoptimized
+                preload
+              />
+            </div>
+            <figcaption className="hero-art-caption">
+              <span className="hero-art-caption-title">Jovan Matthew</span>
+              <span className="hero-art-caption-role">— Security Research</span>
+              <span className="hero-art-caption-subtitle">DeFi · cross-chain · token standards</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
       <section className="content-section about-section" id="about">
