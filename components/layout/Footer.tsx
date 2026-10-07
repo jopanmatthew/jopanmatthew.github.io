@@ -18,6 +18,7 @@ export function Footer() {
             <Link href="/writing">writing</Link>
             <ExternalLink href={profile.x}>x / twitter</ExternalLink>
             <ExternalLink href={profile.telegram}>telegram</ExternalLink>
+            <Link className="footer-back-top" href="#main-content">back to top <span aria-hidden="true">↑</span></Link>
           </nav>
         </div>
         <div className="footer-bottom">

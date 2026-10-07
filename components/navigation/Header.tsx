@@ -23,6 +23,7 @@ export function Header() {
       <div className="header-inner mx-auto flex w-full items-center justify-between">
         <Link className="wordmark" href="/" aria-label="jopantech home">
           <TerminalBrand />
+          <span className="header-brand-meta">Web3 security research</span>
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
