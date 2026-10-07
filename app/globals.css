@@ -151,11 +151,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .hero-copy > :nth-child(5) { animation-delay: 300ms; }
 .hero-copy > :nth-child(6) { animation-delay: 380ms; }
 .hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
+  gap: clamp(1.5rem, 3.2vw, 3rem);
   padding-block: clamp(2.25rem, 4vw, 3.8rem);
 }
 .hero-copy { width: 100%; max-width: 1050px; }
+.hero-logo {
+  display: block;
+  width: clamp(10rem, 16vw, 13rem);
+  height: auto;
+  justify-self: end;
+  border-radius: 8px;
+  animation: terminal-enter 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 180ms both;
+}
 .hero-greeting {
   margin: 0 0 0.35rem;
   color: var(--accent);
@@ -679,7 +689,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .mobile-nav a { display: flex; min-height: 3rem; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); color: var(--foreground); font-size: 0.85rem; text-transform: lowercase; }
   .mobile-nav a:last-child { border-bottom: 0; }
   .mobile-nav a span { color: var(--accent); }
-  .hero { min-height: auto; padding-block: 2.5rem 3rem; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 1.3rem; min-height: auto; padding-block: 2.5rem 3rem; }
+  .hero-logo { grid-row: 1; width: clamp(7.5rem, 32vw, 9rem); justify-self: center; }
+  .hero-copy { grid-row: 2; }
   .hero-name { font-size: clamp(2.21rem, 6.8vw, 3.23rem); }
   .hero-proof { margin-top: 1.25rem; }
   .hero-proof li { font-size: 0.77rem; }

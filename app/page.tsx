@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { profile } from "@/data/profile";
 import { researchProfiles } from "@/data/links";
@@ -45,6 +46,16 @@ export default function HomePage() {
             <Link className="button button-outline" href="#experience">view contest record <span aria-hidden="true">↗</span></Link>
           </div>
         </div>
+        <Image
+          className="hero-logo"
+          src="/icon.png"
+          alt="Jopantech circuit wordmark"
+          width={512}
+          height={512}
+          sizes="(max-width: 740px) 144px, (max-width: 1200px) 16vw, 208px"
+          unoptimized
+          preload
+        />
       </section>
 
       <section className="content-section about-section" id="about">
