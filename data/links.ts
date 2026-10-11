@@ -14,5 +14,6 @@ export const primaryNavigation = [
   { label: "About", href: "/#about" },
   { label: "Contests", href: "/#experience" },
   { label: "Findings", href: "/#research" },
+  { label: "Projects", href: "/#projects" },
   { label: "Writing", href: "/#writing" },
 ] as const;

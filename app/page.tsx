@@ -134,10 +134,45 @@ export default function HomePage() {
         </ScrollReveal>
       </section>
 
+      <section className="content-section projects-section" id="projects">
+        <ScrollReveal>
+          <SectionHeading index="04" title="projects" note="Things I build beyond audits." icon="file" />
+        </ScrollReveal>
+        <ScrollReveal delay={90} className="stagger-reveal">
+          <article className="project-card">
+            <a className="project-preview" href="https://revine-azure.vercel.app/" aria-label="Open Revine live site" target="_blank" rel="noreferrer noopener">
+              <Image
+                src="/projects/revine-landing.png"
+                alt="Revine invoice-financing landing page and app preview"
+                fill
+                sizes="(max-width: 900px) 100vw, 58vw"
+                unoptimized
+              />
+              <span className="project-preview-label">revine / invoice financing</span>
+            </a>
+            <div className="project-details">
+              <p className="project-kicker">Web3 product · Ethereum Sepolia</p>
+              <h3 className="project-title">Revine<span>.</span></h3>
+              <p className="project-summary">An invoice-financing prototype for Indonesian SMEs. Sellers can offer confirmed invoices for early payment, financiers fund them, and buyers repay the current holder.</p>
+              <ul className="project-stack" aria-label="Revine technologies">
+                <li>Next.js</li>
+                <li>Solidity</li>
+                <li>Foundry</li>
+                <li>Noir</li>
+              </ul>
+              <div className="project-links">
+                <ExternalLink className="project-link project-link-primary" href="https://revine-azure.vercel.app/">Open live site <span aria-hidden="true">↗</span></ExternalLink>
+                <ExternalLink className="project-link" href="https://github.com/jopanmatthew/revine">View source <span aria-hidden="true">↗</span></ExternalLink>
+              </div>
+            </div>
+          </article>
+        </ScrollReveal>
+      </section>
+
       <section className="content-section writing-section" id="writing" aria-labelledby="writing-title">
         <ScrollReveal>
           <header className="writing-heading">
-            <span className="section-index">#04</span>
+            <span className="section-index">#05</span>
             <h2 id="writing-title"><span aria-hidden="true">#</span> writing<Icon className="section-heading-icon" name="file" size={17} /></h2>
             <Link className="writing-all" href="/writing">All writing <span aria-hidden="true">→</span></Link>
           </header>
@@ -162,7 +197,7 @@ export default function HomePage() {
 
       <section className="content-section contact-section" id="contact">
         <ScrollReveal>
-          <SectionHeading index="05" title="contact" note="Private audit engagements." icon="message" />
+          <SectionHeading index="06" title="contact" note="Private audit engagements." icon="message" />
         </ScrollReveal>
         <ScrollReveal delay={90}>
           <div className="contact-card">
